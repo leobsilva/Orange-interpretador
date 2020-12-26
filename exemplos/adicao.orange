@@ -1,0 +1,7 @@
+seed soma 1 + 2
+out soma
+
+seed a = 3
+seed b = 4
+seed result = a + b
+out result

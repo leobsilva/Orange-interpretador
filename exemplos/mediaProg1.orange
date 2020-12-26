@@ -1,0 +1,23 @@
+seed trabalho1 = 0
+seed dinamica = 0
+seed trabalho2 = 0
+
+seed peso1 = 25 / 100
+seed peso2 = 30 / 100
+seed peso3 = 15 / 100
+
+out "Digite a nota do Trabalho 1:\n"
+in trabalho1
+seed final1 = trabalho1 * peso1
+
+out "Digite a nota da Dinamica:\n"
+in dinamica
+seed final3 = dinamica * peso3
+
+out "Digite a nota do Trabalho 2:\n"
+in trabalho2
+seed final2 = trabalho2 * peso2
+
+seed soma = final1 + final2 + final3
+seed media = soma / 3
+out media

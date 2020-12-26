@@ -1,0 +1,7 @@
+seed sub 5 - 2
+out sub
+
+seed a = 9
+seed b = 5
+seed result = a - b
+out result
