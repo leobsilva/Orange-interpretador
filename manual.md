@@ -1,6 +1,6 @@
 ## Documentação linguagem Orange
 
-#Aluno: Leonardo Silva
+#### Aluno: Leonardo Silva
 
 ![](https://github.com/leobsilva/Orange-lang/blob/main/orange.jpg)
 
