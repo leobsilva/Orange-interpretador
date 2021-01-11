@@ -17,24 +17,21 @@ public class Processing {
         for(int i = 0; i < lineCount; i++){
             String line = this.lines[i];
             String tokens[] = line.split(" ");
-            System.out.println("got here 1");
             // declarando uma variavel
             if("seed".equals(tokens[0])) {
                 String variableName = tokens[1];
                 String lineExpression[] = line.split(" ", 4); //apenas 4 agora para fazer uma operacao simples, como: seed[0] soma[1] =[2] 3+2[3]
-                System.out.println("got seed");
                 double variableValue = Expressions.expressionProcess(lineExpression[3], this.variables);
                 this.variables.put(variableName, variableValue);//insere o nome(key) relacionado ao valor no banco de variáveis
             } else if("out".equals(tokens[0])) {
                 String variableName = tokens[1];
-                System.out.println("got out");
-                if (variableName.startsWith("\"")){// se o conteudo do nomeVariavel comecar com aspas
-                    String content = line.replace("print \"", "");
-                    content = content.replace("\"", ""); // troque para espaço vazio
-                    content = content.replace("\\n", "\n"); // troque para espaço vazio
+                // System.out.println("got out");
+                if (variableName.startsWith("\"")){
+                    String content = line.replace("out \"", "");
+                    content = content.replace("\"", "");
+                    content = content.replace("\\n", "\n");
                     System.out.print(content);
                 }else{
-                    // busca o valor da variavel do dicionario
                     if(this.variables.containsKey(variableName)){// se existe a variavel no hashmap
                         double value = this.variables.get(variableName);//obtenha o nome
                         System.out.println(value); // printa o valor obtido
@@ -47,7 +44,6 @@ public class Processing {
 
                 Scanner teclado = new  Scanner(System.in);
 
-                System.out.println("got in");
                 
                 if(this.variables.containsKey(variableName)){// se existe a variavel no hashmap
                     double typedValue = teclado.nextDouble();
@@ -59,8 +55,3 @@ public class Processing {
         }
     }
 }
-//prox: criar condicionais das variaveis
-// n poder escrever so out sem variavel seguinte
-
-
-//ideia: fazer uma  variavel para numeros e outro para letras

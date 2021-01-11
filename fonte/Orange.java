@@ -18,10 +18,6 @@ public class Orange {
 
 
         if(extension.equals("orange")){
-            // for (int i = 0; i < args.length; i++) {
-            //     // System.out.println("args[" + i + "] = " + args[i]);
-            //     System.out.println(extension);
-            // }
         } else{
             System.out.println("extensao invalida");
             return;
@@ -39,9 +35,6 @@ public class Orange {
             }
             input.close();
 
-            // for (int i = 0 ; i < amount; i++) {
-            //     System.out.println("Linha " + i + ":" + lines[i]);
-            // }
         } catch (Exception e) {
             System.out.println("Nao foi possivel abrir o arquivo");
             System.out.println("Ele existe msm?");
