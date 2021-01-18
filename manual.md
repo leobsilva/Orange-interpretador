@@ -51,7 +51,7 @@ out nota                         |
 
 #### Realizando operações matemáticas
 Primeiramente é nescessário atribuir uma variavel para depois atribuir uma operação.  Também é possivel atribuir apenas um valor a uma variavem e depois fazer uma
-operação utilizando apenas os nomes: 'seed a = 2 + 5', 'seed b = 5' 'seed c = 23' 'seed resposta = c - b'. Não foi implementada precedencia de sinais com o uso dos
+operação utilizando apenas os nomes: 'seed a = 2 + 5', 'seed b = 5', 'seed c = 23', 'seed resposta = c - b'. Não foi implementada precedencia de sinais com o uso dos
 "()", logo ele não é suportado na linguagem Orange. Porem existe a precedencia de sinais seguindo primeiro * ou / e depois + e -.
 Exemplos:
 
